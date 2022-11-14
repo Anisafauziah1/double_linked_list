@@ -115,6 +115,13 @@ namespace double_linked_list
             current.next.prev = previous;
             return true;
         }
+        public bool ListEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
+        }
 
 
     }
