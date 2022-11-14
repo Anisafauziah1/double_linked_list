@@ -13,6 +13,7 @@ namespace double_linked_list
          * its suceeding and preceeding
          * in terms of the next and previous */
         public int noMhs;
+        public string name;
 
         static void Main(string[] args)
         {
