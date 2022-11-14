@@ -186,7 +186,7 @@ namespace double_linked_list
                                     Console.WriteLine("\nList is empty");
                                     break;
                                 }
-                                Console.WriteLine("\nEnter the roll number of the student" + 
+                                Console.WriteLine("\nEnter the roll number of the student" +
                         "whose record is to be deleted: ");
                                 int rollNo = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
@@ -235,10 +235,12 @@ namespace double_linked_list
                             }
                             break;
                     }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
+                }
             }
         }
-    }
-       
-        
-    
+    }  
 }
