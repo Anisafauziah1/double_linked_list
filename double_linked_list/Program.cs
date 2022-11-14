@@ -17,6 +17,9 @@ namespace double_linked_list
         //point to the suceeding node
         public Node next;
         //point to the preceeding node
+        public Node prev;
+    }
+    
         static void Main(string[] args)
         {
         }
