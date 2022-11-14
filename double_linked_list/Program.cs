@@ -134,12 +134,54 @@ namespace double_linked_list
                     Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
             }
         }
+        public void descending()
+        {
+            if (ListEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the Descending order of\" + \"roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next) 
+                { }
+
+                while(currentNode != null)
+                {
+                    Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
+            }
+        }
 
     }
     class program 
     {
         static void Main(string[] args)
         {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add a record to the list");
+                    Console.WriteLine("2. Delete a record from the list");
+                    Console.WriteLine("3. View all records in the ascending order of roll numbers");
+                    Console.WriteLine("4. View all records in the descending order of roll numbers");
+                    Console.WriteLine("5. Search for a record in the list");
+                    Console.WriteLine("6. Exit\n");
+                    Console.Write("Enter your choice (1-6): ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNode();
+                            }
+                            break;
+                    }
+                }
+            }
         }
     }
        
